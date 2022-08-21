@@ -1,0 +1,21 @@
+
+<div class="row text-center">
+    <div class="col-6">
+        <h2>Usuarios</h2>
+    </div>
+    <div class="col-6">
+        <button mat-raised-button (click)="openDialog()">Add users</button>
+    </div>
+</div>
+
+
+<div class="row pt-4">
+    <mat-card class="offset-1 col-4" *ngFor="let payer of payers">
+        <mat-card-title>{{payer.name}}</mat-card-title>
+        <mat-card-subtitle>{{payer.email}}</mat-card-subtitle>
+        <mat-card-actions>
+            <button mat-button>Ver pagos</button>
+          </mat-card-actions>
+    </mat-card>    
+</div>
+

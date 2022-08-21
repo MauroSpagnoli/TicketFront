@@ -1,0 +1,11 @@
+<mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input [(ngModel)]="this.user.name" matInput>
+  </mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input [(ngModel)]="this.user.email" name="email" matInput>
+</mat-form-field>
+
+<button mat-button (click)="createUser()">Crear usuario</button>
